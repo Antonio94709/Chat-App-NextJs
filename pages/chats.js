@@ -10,12 +10,14 @@ const ChatEngine = dynamic(() =>
 );
 
 const MessageForSocial = dynamic(() =>
-  import("react-chat-engine").then((module) => module.MessageForSocial)
+  import("react-chat-engine").then((module) => module.MessageFormSocial)
 );
 
 export default function chats() {
   const { username, secret } = useContext(Context);
   const [showChat, setShowChat] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     if (typeof document !== null) {
@@ -23,9 +25,11 @@ export default function chats() {
     }
   });
 
-  if (!showChat) return <div />;
+  useEffect(() => {
+    if (username.length === 0 || secret.length === 0) router.push("./");
+  });
 
-  const router = useRouter();
+  if (!showChat) return <div />;
 
   return (
     <div className="background">
@@ -36,6 +40,7 @@ export default function chats() {
 35c61da3-3246-470b-a3a4-825a0a34e8a3"
           userName={username}
           userSecret={secret}
+          renderNewMessageForm={() => <MessageForSocial />}
         />
       </div>
     </div>
