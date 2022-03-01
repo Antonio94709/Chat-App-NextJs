@@ -22,7 +22,7 @@ export default function Auth() {
         { username, secret },
         {
           headers: {
-            "Private-key": "f2ce84b2 - b819 - 4e66 - 8549 - c56880732564",
+            "Private-key": "f2ce84b2-b819-4e66-8549-c56880732564",
           },
         }
       )
@@ -32,7 +32,7 @@ export default function Auth() {
   return (
     <div className="background">
       <div className="auth-container">
-        <form className="auth-form" onSubmit={(e) => e.onSubmit(e)}>
+        <form className="auth-form" onSubmit={(e) => onSubmit(e)}>
           <div className="auth-title">Next Js chats</div>
           <div className="input-container">
             <input
