@@ -20,6 +20,17 @@ export default function Auth() {
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
+          <div className="input-container">
+            <input
+              type="password"
+              placeholder="Password"
+              className="text-input"
+              onChange={(e) => setSecret(e.target.value)}
+            />
+          </div>
+          <button type="submit" className="submit-button">
+            Login /Sign up
+          </button>
         </form>
       </div>
     </div>
