@@ -30,10 +30,10 @@ export default function Auth() {
   }
 
   return (
-    <div className="background">
+    <div className="bg-yellow-300 background ">
       <div className="auth-container">
         <form className="auth-form" onSubmit={(e) => onSubmit(e)}>
-          <div className="auth-title">Next Js chats</div>
+          <div className="auth-title">ExiosChats</div>
           <div className="input-container">
             <input
               placeholder="Email"
