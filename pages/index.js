@@ -30,8 +30,8 @@ export default function Auth() {
   }
 
   return (
-    <div className="">
-      <div class="p-4 m-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <div className="h-screen w-screen absolute  bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700">
+      <div class="p-4 m-auto mt-48  max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
         <form class="space-y-6" action="#" onSubmit={(e) => onSubmit(e)}>
           <h5 class="text-xl font-medium text-gray-900 dark:text-white">
             Welcome To Our Platform
@@ -85,7 +85,7 @@ export default function Auth() {
           </div>
           <button
             type="submit"
-            class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="w-full text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Login/Sign Up
           </button>

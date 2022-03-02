@@ -32,7 +32,7 @@ export default function chats() {
   if (!showChat) return <div />;
 
   return (
-    <div className="background">
+    <div className="background h-screen w-screen absolute">
       <div className="shadow">
         <ChatEngine
           height="calc(100vh - 200px)"
